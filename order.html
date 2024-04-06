@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Shack</title>
+    <link rel = "stylesheet" href ="style.css">
+
+</head>
+<body>
+
+    <h1 class = "nd"> THE BURGER SHACK</h1>
+<nav class = "navbar">
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="order.html">Order</a></li>
+  </ul>
+
+</nav>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+
+    <div class="item">
+      <img src="/imgs/mham.png">
+      <h2>Burger</h2>
+      <p>$4.29</p>
+      <button class="cartb" onclick="cartb('mham')">Add</button>
+    </div>
+
+    <div class="item">
+      <img src="/imgs/mfries.png">
+      <h2>Fries</h2>
+      <p>$1.99</p>
+      <button class="cartb" onclick="cartb('mfries')">Add</button>
+    </div>
+
+    <div class="item">
+      <img src="/imgs/msoda.jpg">
+      <h2>Pepsi</h2>
+      <p>$1.24</p>
+      <button class="cartb" onclick="cartb('msoda')">Add</button>
+    </div>
+    
+    <div class="item">
+      <img src="/imgs/mcomb.png">
+      <h2>Combo</h2>
+      <h5> Includes: hamburger, french fries and soda</h5>
+      <p>$7.99</p>
+      <button class="cartb" onclick="cartb('mcomb')">Add</button>
+  </div>
+
+
+</div>
+
+<div id="total" class="total">
+  Total: $<span id="totalAmount">0.00</span>
+
+      <script src ="script.js"> </script>
+
+    <a href="core.html">
+      <button class="confirm"> confirm order </button>
+    </a>
+
+</body>
+</html>
